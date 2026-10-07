@@ -1,0 +1,27 @@
+/* Minimal reset. The design system itself lives in vitrine.css, scoped to .vt. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: #062353;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* RHIA wordmark (components/BrandLogo.jsx): only the letters follow `color`. */
+.brand-logo {
+  color: #062353;
+  flex-shrink: 0;
+}
